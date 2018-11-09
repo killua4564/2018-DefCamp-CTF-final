@@ -1,0 +1,23 @@
+11筆資料用空白分開
+data[0]: <= 9999 and >= 1
+data[1]: >= 1 and <= 12
+data[2]: >= 1 and <= 31
+data[3]: >= 0 and <= 23
+data[4]: >= 0 and <= 59
+date = datetime(dinp[0], dinp[1], dinp[2], dinp[3], dinp[4]).time()
+必須通過 not date
+
+data[5]: (1337 * (data[0]-1)!) ** 2
+data[6]:
+data[7]:
+data[8]:
+data[9]:
+inp = (np.array([float(data[6]), float(data[7]), float(data[8]), float(data[9])])*PRIV)%int(data[5])
+test = np.array([float(559), float(661), float(661), float(522)]) # C(4, 3) correct
+solved = np.empty([], dtype=np.float)
+`if inp[i] == test[i]: solved.append(inp[i])`
+必須通過 hash(np.sum(solved)*PRIV) == 'fe79a0ee1fc2a52fc9af8592d8c0570a73d9542ec1d4ec2ae6e9d03991cb0459'
+
+data[10]: command
+re.sub(r"[^a-z|\(|\)|<|\-|,|=]", '', data[10]) 
+長度 <= 2000
